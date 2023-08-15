@@ -76,13 +76,14 @@ const Home = () => {
               marginPagesDisplayed={3}
               pageRangeDisplayed={3}
               previousLabel="<"
-              containerClassName="flex justify-end items-center"
-              pageClassName="px-4 py-2 m-3 bg-blue-200 shadow-sm rounded-md hover:bg-white hover:text-black "
-              pageLinkClassName="page-link"
-              previousClassName="px-4 py-2 m-3 bg-blue-200 shadow-sm rounded-md hover:bg-white hover:text-black"
-              nextClassName="px-4 py-2 m-3 bg-blue-200 shadow-sm rounded-md hover:bg-white hover:text-black"
+              containerClassName=" grid grid-cols-5 md:flex md:justify-end md:items-center"
+              // containerClassName="grid grid-cols-9 "
+              pageClassName="px-4 py-2 m-3 text-center bg-blue-200 shadow-sm rounded-md hover:bg-white hover:text-black "
+              pageLinkClassName="page-link "
+              previousClassName="px-4 py-2 text-center m-3 bg-blue-200 shadow-sm rounded-md hover:bg-white hover:text-black"
+              nextClassName="px-4 py-2 m-3 text-center bg-blue-200 shadow-sm rounded-md hover:bg-white hover:text-black"
               activeClassName="bg-green-800 text-white"
-              previousLinkClassName="page-prev"
+              previousLinkClassName="page-prev "
               nextLinkClassName="page-prev"
             />
           </div>
