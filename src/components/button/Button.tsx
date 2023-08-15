@@ -9,6 +9,7 @@ interface Props {
 const Button: React.FC<Props> = ({ btntype, text, onClickbtn }) => {
   return (
     <button
+      data-testid="myButton"
       type={btntype}
       onClick={onClickbtn}
       className="pt-2 pb-2 pr-4 pl-4  rounded-md text-white bg-[#11632F]"

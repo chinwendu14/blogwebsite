@@ -17,13 +17,24 @@ const Cards: React.FC<Props> = ({
   onClickbtn,
 }) => {
   return (
-    <div className="shadow-sm rounded-md bg-white p-6 text-black flex  justify-between flex-col">
-      <h1 className="mb-4 font-bold text-lg" onClick={onClickheader}>
+    <div
+      data-testid="card"
+      className="shadow-sm rounded-md bg-white p-6 text-black flex  justify-between flex-col"
+    >
+      <h1
+        data-testid="card-title"
+        className="mb-4 font-bold text-lg"
+        onClick={onClickheader}
+      >
         {headerText}
       </h1>
-      <p>{text} ...</p>
+      <p data-testid="card-description">{text} ...</p>
       <div className="pt-5 flex  justify-end items-center  ">
-        <p className="mr-2 underline text-[#11632F]" onClick={onClickcomment}>
+        <p
+          data-testid="card-comments"
+          className="mr-2 underline text-[#11632F]"
+          onClick={onClickcomment}
+        >
           comments
         </p>
         <Button btntype="button" text=" Read More" onClickbtn={onClickbtn} />

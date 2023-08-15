@@ -3,8 +3,8 @@ import React from "react";
 import "./spinner.css";
 const SpinnerLoader = () => {
   return (
-    <div className="spinner">
-      <p className="p"></p>
+    <div className="spinner" data-testid="spinner">
+      <p className="p" data-testid="spinner-Element"></p>
     </div>
   );
 };

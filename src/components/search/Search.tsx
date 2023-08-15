@@ -11,9 +11,13 @@ interface Props {
 
 const Search: React.FC<Props> = ({ onChange, value }) => {
   return (
-    <div className="w-full p-2 flex justify-between items-center shadow-sm rounded-md bg-white">
+    <div
+      className="w-full p-2 flex justify-between items-center shadow-sm rounded-md bg-white"
+      data-testid="search-Element"
+    >
       <BsSearch className=" mr-5" />
       <input
+        data-testid="search-Element-input"
         type="text"
         className="w-full  focus:outline-none"
         onChange={onChange}

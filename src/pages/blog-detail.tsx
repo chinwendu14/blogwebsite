@@ -74,7 +74,10 @@ const BlogDetail = () => {
             {showText
               ? comment.map((item: any, i: any) => {
                   return (
-                    <div className="my-6 bg-[#11632F]  text-white shadow-sm rounded-md p-4">
+                    <div
+                      className="my-6 bg-[#11632F]  text-white shadow-sm rounded-md p-4"
+                      data-testid="data-display"
+                    >
                       <h1>{item.nameComment}</h1>
                       <p>{item.messageComment}</p>
                     </div>
@@ -102,10 +105,11 @@ const BlogDetail = () => {
                   </p>
                 ) : null}
               </div>
-              <div>
+              <div data-testid="input-Element">
                 <p className="py-4">message</p>
 
                 <textarea
+                  data-testid="input-Element-input"
                   className="w-full p-2 flex  shadow-sm rounded-md bg-white focus:outline-none"
                   name="message"
                   id="message"
@@ -126,7 +130,6 @@ const BlogDetail = () => {
               </div>
             </form>
           </div>
-          {/* end */}
         </div>
       </div>
     </div>
